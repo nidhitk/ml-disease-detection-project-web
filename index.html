@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
+        <div class="navbar">
+            <div class="nav-first">
+                <p style="font-family: 'Poppins', sans-serif;">Know Your Brain</p>
 
+            </div>
+           
+           <div class="nav-section">
+            <div class="about">
+                <p><a href="" >About</a></p>
+            </div>
+            <div class="contact">
+                <p><a href="">Contact</a></p>
+            </div>
+            <div class="help">
+                <p><a href="">Help</a></p>
+            </div>
+           </div>
+        </div>
     </header>
-    
-    <footer>
+    <div class="panel">
 
-    </footer>
-    
+        <div class="container">
+            <h1 style="font-family: 'Poppins', sans-serif;">Image Classifier</h1>
+            <div class="input">
+                <input type="file" id="imageInput" accept="image/*">
+                <button onclick="uploadImage()" id="button">Upload</button>
+
+            </div>
+
+            <p id="result" style="font-family: 'Poppins', sans-serif;">Upload an image to see the result.</p>
+            <img id="preview" src="" alt="Image Preview" style="display:none;" />
+        </div>
+
+
+    </div>
+
 </body>
+
 </html>

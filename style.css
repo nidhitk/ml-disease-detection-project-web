@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar{
+    height: 50px;
+    background-color: #E6B2BA;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: transparent;
+    font-size: 1.5rem;
+
+}
+.nav-first{
+    width: 200px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.nav-section{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+.panel{
+    height:800px;
+
+    background-image: url(brain3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* margin-bottom: 20px; */
+    
+}
+.container{
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 350px;
+   
+}
+#button{
+    border:none;
+    border-radius: 40%;
+    font-weight: 500;
+    height: 25px;
+
+}
+#imageInput{
+    width: 220px;
+    
+}
