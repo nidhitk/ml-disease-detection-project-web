@@ -65,7 +65,8 @@ def predict():
         filepath = os.path.join("uploads", filename)
         image.save(filepath)
 
-        img = Image.open(filepath)
+
+        img = Image.open(filepath).convert("RGB")
         img = transform(img).unsqueeze(0).to(device)
 
         with torch.no_grad():
