@@ -63,21 +63,23 @@ http://127.0.0.1:5000/
 You should be able to upload an image and get the predicted class index.
 
 ##How it works
+
 ###1.Backend (Flask + PyTorch):
 
-  The Flask app listens for POST requests at /predict containing an image.
+  - The Flask app listens for POST requests at /predict containing an image.
 
-  The image is processed, resized, and transformed to match the model's input size.
+  - The image is processed, resized, and transformed to match the model's input size.
 
-  The pre-trained ResNet50 model predicts the class, and the result is sent back to the frontend as a JSON response.
+  - The pre-trained ResNet50 model predicts the class, and the result is sent back to the frontend as a JSON response.
 
 ###2.Frontend (HTML + JavaScript):
 
-A simple HTML form allows users to upload images.
+ - A simple HTML form allows users to upload images.
 
-JavaScript handles the image upload, sends it to the backend via a POST request, and displays the predicted class index.
+ - JavaScript handles the image upload, sends it to the backend via a POST request, and displays the predicted class index.
 
 Folder Structure
+```bash
 /your-repository-name
 │
 ├── app.py              # Flask application for model inference
@@ -90,17 +92,17 @@ Folder Structure
 │   └── style.css       # CSS file for styling the web page
 ├── requirements.txt    # List of Python dependencies
 └── README.md           # Project README file
-
-License
+```
+###License
 This project is open source and available under the MIT License.
 
-Contributing
+###Contributing
 Feel free to fork the repository, create a new branch, make changes, and submit a pull request. Any contributions are welcome!
 
-Acknowledgements
-PyTorch for deep learning and model inference.
+###Acknowledgements
+- PyTorch for deep learning and model inference.
 
-Flask for creating the web application.
+- Flask for creating the web application.
 
-ResNet50 model pre-trained on ImageNet.
+- ResNet50 model pre-trained on ImageNet.
 
