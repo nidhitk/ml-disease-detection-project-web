@@ -34,7 +34,7 @@ venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
 
-###3. Install required dependencies
+### 3. Install required dependencies
 Install the required Python packages using pip:
 ```bash
 pip install -r requirements.txt
@@ -45,26 +45,26 @@ Alternatively, you can manually install the required packages:
 ```bash
 pip install flask torch torchvision pillow werkzeug
 ```
-###4. Download the pre-trained model
+### 4. Download the pre-trained model
 Ensure that the trained model (best_model.pth) is located in the model/ directory in your project. If you don't have the model, you can train it or download it from the appropriate source.
 
-###5. Run the Flask server
+### 5. Run the Flask server
 To run the Flask application, execute the following command:
 ```bash
 python app.py
 ```
 This will start the Flask server locally at http://127.0.0.1:5000/.
 
-###6. Access the Web Interface
+### 6. Access the Web Interface
 Open your web browser and navigate to:
 ```bash
 http://127.0.0.1:5000/
 ```
 You should be able to upload an image and get the predicted class index.
 
-##How it works
+## How it works
 
-###1.Backend (Flask + PyTorch):
+### 1.Backend (Flask + PyTorch):
 
   - The Flask app listens for POST requests at /predict containing an image.
 
@@ -72,7 +72,7 @@ You should be able to upload an image and get the predicted class index.
 
   - The pre-trained ResNet50 model predicts the class, and the result is sent back to the frontend as a JSON response.
 
-###2.Frontend (HTML + JavaScript):
+### 2.Frontend (HTML + JavaScript):
 
  - A simple HTML form allows users to upload images.
 
@@ -93,13 +93,13 @@ Folder Structure
 ├── requirements.txt    # List of Python dependencies
 └── README.md           # Project README file
 ```
-###License
+### License
 This project is open source and available under the MIT License.
 
-###Contributing
+### Contributing
 Feel free to fork the repository, create a new branch, make changes, and submit a pull request. Any contributions are welcome!
 
-###Acknowledgements
+### Acknowledgements
 - PyTorch for deep learning and model inference.
 
 - Flask for creating the web application.
