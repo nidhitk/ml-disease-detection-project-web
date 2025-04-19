@@ -18,7 +18,9 @@ function uploadImage() {
         const data = await response.json();
 
         if (response.ok) {
-            document.getElementById("result").textContent = "Predicted Class Index: " + data.class_index;
+            document.getElementById("result1").textContent = "Predicted Class : " + data.predicted_class;
+            document.getElementById("result2").textContent = "Precition Accuracy: " + data.probability*100+ "%";
+
         } else {
             document.getElementById("result").textContent = "Error: " + JSON.stringify(data);
         }

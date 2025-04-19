@@ -66,3 +66,37 @@ a{
     width: 220px;
     
 }
+
+
+/* new design */
+
+  /* .result-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f5f9ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .result-card h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .result-card p {
+    font-size: 18px;
+    color: #444;
+    margin: 5px 0;
+  }
+
+  .result-card p span {
+    color: #007BFF;
+    font-weight: 600;
+  }
+ */

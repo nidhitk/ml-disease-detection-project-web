@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="D:\ml_project\pythonProject3\static\css\style.css">
-    
+
 </head>
 
 <body>
@@ -19,18 +19,18 @@
                 <p style="font-family: 'Poppins', sans-serif;">Know Your Brain</p>
 
             </div>
-           
-           <div class="nav-section">
-            <div class="about">
-                <p><a href="" >About</a></p>
+
+            <div class="nav-section">
+                <div class="about">
+                    <p><a href="">About</a></p>
+                </div>
+                <div class="contact">
+                    <p><a href="">Contact</a></p>
+                </div>
+                <div class="help">
+                    <p><a href="">Help</a></p>
+                </div>
             </div>
-            <div class="contact">
-                <p><a href="">Contact</a></p>
-            </div>
-            <div class="help">
-                <p><a href="">Help</a></p>
-            </div>
-           </div>
         </div>
     </header>
     <div class="panel">
@@ -43,9 +43,18 @@
 
             </div>
 
-            <p id="result" style="font-family: 'Poppins', sans-serif;">Upload an image to see the result.</p>
-            <img id="preview" src="" alt="Image Preview" style="display:none;" />
+            <div class="previewimg">
+                <img id="preview" src="" alt="Image Preview" style="display:none;" />
+            </div>
+            <p id="result1" style="font-family: 'Poppins', sans-serif;">Upload an image to see the result.</p>
+            <p id="result2" style="font-family: 'Poppins', sans-serif;"></p>
+
         </div>
+        <!-- <div id="resultCard" class="result-card" style="display: none;">
+            <h2>Prediction Result</h2>
+            <p id="classResult"><strong>Class:</strong> <span></span></p>
+            <p id="probResult"><strong>Probability:</strong> <span></span></p>
+          </div> -->
 
 
     </div>

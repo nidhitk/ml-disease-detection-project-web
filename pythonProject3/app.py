@@ -72,9 +72,26 @@ def predict():
         with torch.no_grad():
             output = model(img)
             _, predicted_class = torch.max(output, 1)
+            probs = torch.nn.functional.softmax(output, dim=1)
+            predicted_prob = torch.max(probs, dim=1).values
+            print(f"Predicted class: {predicted_class.item()}, Probability: {predicted_prob.item():.4f}")
 
-        return jsonify({"class_index": predicted_class.item()})
+        # return jsonify({"class_index": predicted_class.item()})
+        # return jsonify({"class_index": predicted_class.item()})
+            class_names = [
+                "Alzheimer's -> Mild Dementia", "Alzheimer's -> Moderate Dementia", "Alzheimer's -> Non Demented",
+                "Alzheimer's -> Very Mild Dementia",
+                "Brain Cancer -> Glioma", "Brain Cancer -> Meningioma", "Brain Cancer -> No Tumor",
+                "Brain Cancer -> Pituitary",
+                "Parkinson's -> Mild Demented", "Parkinson's -> Moderate Dementia", "Parkinson's -> Non-Demented",
+                "Parkinson's -> Severe-Demented", "Parkinson's -> Very-Mild-Demented"
+            ]
+            result={"predicted_class": class_names[predicted_class.item()],
+                    "probability":round(predicted_prob.item(), 4)
+                    }
 
+        # return jsonify({"class_index": class_names[predicted_class.item()]})
+        return jsonify(result)
 
 if __name__ == "__main__":
     # Ensure uploads directory exists
