@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="D:\ml_project\pythonProject3\static\css\style.css">
 
+
 </head>
 
 <body>
@@ -36,25 +37,29 @@
     <div class="panel">
 
         <div class="container">
-            <h1 style="font-family: 'Poppins', sans-serif;">Image Classifier</h1>
-            <div class="input">
-                <input type="file" id="imageInput" accept="image/*">
-                <button onclick="uploadImage()" id="button">Upload</button>
-
-            </div>
-
-            <div class="previewimg">
-                <img id="preview" src="" alt="Image Preview" style="display:none;" />
-            </div>
-            <p id="result1" style="font-family: 'Poppins', sans-serif;">Upload an image to see the result.</p>
-            <p id="result2" style="font-family: 'Poppins', sans-serif;"></p>
-
+           
+            
+                <div><h1 style="font-family: 'Poppins', sans-serif;">Image Classifier</h1></div>
+                
+                <div class="input">
+                    <label for="imageInput" class="custom-file-upload" id="uploadLabel">Choose Image</label>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <button onclick="uploadImage()" id="button">Upload</button>
+                </div>
+            
+                <div><p id="result" style="font-family: 'Poppins', sans-serif;">Upload an image to see the result.</p></div>
+            
+                <div id="resultCard" class="result-card" style="display: none;">
+                    <h2>Prediction Result</h2>
+                    <div>
+                        <img id="preview" src="" alt="Image Preview" style="max-width: 250px; margin-bottom: 10px;" />
+                    </div>
+                    
+                    <p id="classResult"><strong>Class:</strong> <span></span></p>
+                    <p id="probResult"><strong>Probability:</strong> <span></span></p>
+                </div>
         </div>
-        <!-- <div id="resultCard" class="result-card" style="display: none;">
-            <h2>Prediction Result</h2>
-            <p id="classResult"><strong>Class:</strong> <span></span></p>
-            <p id="probResult"><strong>Probability:</strong> <span></span></p>
-          </div> -->
+
 
 
     </div>
